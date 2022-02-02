@@ -1,10 +1,60 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
+/* navbar css */
+nav{
+    height: 90px;
+    background: #562EFF;
+    margin: 0px;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.nav-logo img{
+    width: 40px;
+    height: 50px;
+}
+.nav-logo h3{
+    font-size: 24px;
+    margin-left: 10px;
+    margin: 25px 10px 20px 15px;
+    color: #FFFFFF;
+}
+
+.nav-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-content a{
+    text-decoration: none;
+    margin: 25px 10px 20px 15px;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.nav-content img{
+    width: 40px;
+    height: 40px;
+    margin: 25px 10px 20px 15px;
+}
+
 /* common css */
 body{
     font-family: 'Poppins', sans-serif;
     background: #F3F1FF;
+    margin: 0;
 }
 main{
     display: flex;
@@ -16,7 +66,7 @@ main{
     background: #FFFFFF;
     border-radius: 5px;
     width: 870px; 
-    margin-bottom: 20px;
+    margin: 20px;
 }
 
 /* top player section css */
