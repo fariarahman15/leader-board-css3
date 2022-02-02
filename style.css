@@ -8,13 +8,15 @@ body{
 }
 main{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 .container{
     background: #FFFFFF;
     border-radius: 5px;
-    width: 870px;
-    
+    width: 870px; 
+    margin-bottom: 20px;
 }
 
 /* top player section css */
@@ -25,8 +27,7 @@ main{
     line-height: 36px;
     color: #562EFF;
 }
-.player-field{
-    height: 680px;
+.player-field, .blog-field, .course-field{
     margin: 30px;
 }
 
@@ -55,4 +56,101 @@ main{
 
 hr{
     border: 1px solid #D1D1D1;
+}
+
+/* top blog section css */
+.blog-list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    margin-bottom: 30px;
+}
+
+.blog{
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.thumbnail img{
+    width: 177px;
+    height: 117px;
+}
+
+.blog-title{
+    font-size: 20px;
+    margin: 0px;
+    line-height: 34px;
+}
+
+.blog-info{
+    margin: 0px;
+    margin-left: 16px;
+}
+
+.blog-author{
+    color: #9F9F9F;
+    font-size: 16px;
+    margin: 0px;
+}
+
+.blog-author a{
+    text-decoration: none;
+    color: #562EFF;
+}
+
+/* latest courses section css */
+.course-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    margin-bottom: 30px;
+}
+.course{
+    width: 225px;
+    height: 270px;
+    padding: 12px;
+    box-shadow: 0 4px 5px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    
+}
+
+.course-banner img{
+    width: 225px;
+    height: 104px;
+}
+
+.course-title{
+    font-size: 18px;
+    margin: 0px;
+}
+
+.course-author{
+    font-size: 14px;
+    color: #ED6B4F;
+}
+
+.course-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.fa-star.filled{
+    color: #FFC014;
+}
+
+.fa-star.empty{
+    color: #AEAEAE;
+    opacity: 0.25;
+}
+
+.course-duration{
+    color: #FF4A60;
+    background: #FFE4E8;
+    border-radius: 20px;
+    padding: 5px;
+    
 }
