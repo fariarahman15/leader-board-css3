@@ -20,6 +20,7 @@ main{
 /* top player section css */
 .section-title{
     margin: 3px;
+    padding-bottom: 30px;
     font-size: 24px;
     line-height: 36px;
     color: #562EFF;
@@ -32,6 +33,8 @@ main{
 .player-list{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    margin-bottom: 30px;
 }
 
 .player{
@@ -43,4 +46,13 @@ main{
 .player img{
     width: 56px;
     height: 56px;
+}
+
+.player h3{
+    margin: 0px;
+    margin-left: 16px;
+}
+
+hr{
+    border: 1px solid #D1D1D1;
 }
